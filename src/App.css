@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 15vh;
+}
+
+.App-logo {
+  width: 10rem;
+}
+
+.App-name {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.App-vegetables-wrapper {
+  height: 70vh;
+  overflow-y: auto;
+
+  padding: 1rem 0;
+}
+
+.App-vegetables {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.App-vegetable {
+  flex-basis: 40%;
+  box-shadow: 0 0 2rem #dddddd;
+
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+@media screen and (min-width: 992px) {
+  .App-vegetable {
+    flex-basis: 30%;
+  }
+}
+
+.App-vegetable img {
+  width: 100%;
+}
+
+
+.App-cart {
+  height: 15vh;
+  overflow-y: auto;
+
+  padding: 1rem;
+
+  background-color: #F9A14B;
+  color: white;
+}
+
+.App-cart-total {
+  font-weight: bold;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
